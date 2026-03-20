@@ -1,0 +1,1 @@
+{\n  "name": "to-go-delivery",\n  "version": "1.0.0",\n  "private": true,\n  "workspaces": [\n    "frontend/*",\n    "backend/*"\n  ],\n  "scripts": {\n    "start": "npm run install:workspaces && npm run start:all",\n    "install:workspaces": "lerna bootstrap",\n    "start:all": "npm run -ws start"\n  },\n  "devDependencies": {\n    "lerna": "^4.0.0"\n  }\n}
